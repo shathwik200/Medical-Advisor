@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.3.1",
+    "express-validator": "^6.14.0",
+    "marked": "^4.0.12"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

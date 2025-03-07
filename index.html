@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Advisor Interface</title>
+    <meta name="description" content="Medical Advisor Interface for medical advice and assistance">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__left">
+            <p class="brand">Medical Advisor</p>
+            <img src="assets/icons/dropdown.svg" alt="">
+        </div>
+        <div class="header__right">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-toggle__text">Light Mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="content">
+            <h1 class="content__title">How can I assist with your medical needs?</h1>
+            <div class="output-container">
+                <div id="output" class="output"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="chat-bottom">
+        <form class="chat-input">
+            <textarea class="chat-input__field" placeholder="Message Medical Advisor"
+                aria-label="Message Medical Advisor" rows="1" required></textarea>
+            <button type="submit" class="chat-input__send">
+                <svg viewBox="0 0 24 24" class="send-icon" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor" />
+                </svg>
+            </button>
+        </form>
+        <span class="helper-text">Press Shift + Enter to send message</span>
+        <div class="action-buttons">
+            <button class="btn btn--summarize" aria-label="Summarize a medical statement">
+                <img src="assets/icons/summarize.svg" alt="">
+                <span class="btn__text">Summarize a medical statement</span>
+            </button>
+
+            <button class="btn btn--advice" aria-label="Get advice">
+                <img src="assets/icons/getadvice.svg" alt="">
+                <span class="btn__text">Get advice</span>
+            </button>
+
+            <button class="btn btn--surprise" aria-label="Surprise me">
+                <img src="assets/icons/surpriseme.svg" alt="">
+                <span class="btn__text">Surprise me</span>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__text">
+            Medical Advisor can provide general advice. Consult a healthcare professional for serious concerns.
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
