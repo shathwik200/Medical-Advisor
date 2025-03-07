@@ -29,7 +29,7 @@ async function handleChat(message) {
     outputDiv.innerHTML = marked.parse(`**User**: ${message}\n\n*Medical Advisor is thinking...*`);
 
     // Send user message to the server
-    const response = await fetch('http://localhost:5000/chat', {
+    const response = await fetch('/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
